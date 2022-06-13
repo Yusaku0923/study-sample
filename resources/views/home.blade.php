@@ -7,7 +7,7 @@
 @stop
 
 @section('content')
-    <p>Welcome to this beautiful admin panel.</p>
+    <p>本日の学習予定表は以下の通りです。</p>
 @stop
 
 @section('css')
@@ -15,5 +15,4 @@
 @stop
 
 @section('js')
-    <script> console.log('Hi!'); </script>
 @stop
