@@ -19,7 +19,7 @@ class CreateStudyRecordsTable extends Migration
             $table->string('name')->comment('題名');
             $table->string('subject')->comment('教科');
             $table->string('detail')->comment('詳細');
-            $table->text('text')->comment('メモ');
+            $table->text('text')->nullable()->comment('メモ');
             $table->softDeletes()->comment('削除日時');
             // $table->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'))->comment('作成日時');
             // $table->timestamp('updated_at')->default(DB::raw('CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP'))->comment('更新日時');
