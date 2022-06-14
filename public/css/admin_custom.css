@@ -1,0 +1,56 @@
+.subject-icon {
+    width: fit-content;
+    /* position: absolute;
+    top: 5px;
+    left: 5px; */
+    padding: 4px 10px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+/* 国語 */
+.icon-0, .icon-1, .icon-2 {
+    background-color: rgb(245, 8, 8);
+    color: white;
+}
+/* 数学 */
+.icon-3, .icon-4, .icon-5, .icon-6, .icon-7 {
+    background-color: rgb(8, 63, 245);
+    color: white;
+}
+/* 英語 */
+.icon-8, .icon-9, .icon-10 {
+    background-color: rgb(245, 8, 154);
+    color: white;
+}
+/* 社会 */
+.icon-11, .icon-12, .icon-13 {
+    background-color: rgb(255, 217, 0);
+    color: black;
+}
+/* 理科 */
+.icon-14, .icon-15, .icon-16 {
+    background-color: rgb(255, 154, 1);
+    color: black;
+}
+/* 公民 */
+.icon-17, .icon-18, .icon-19 {
+    background-color: rgb(78, 228, 255);
+    color: black;
+}
+/* その他 */
+.icon-20 {
+    background-color: rgb(104, 104, 104);
+    color: white;
+}
+
+
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+.card-info {
+    font-size: 16px;
+    font-weight: bold;
+}

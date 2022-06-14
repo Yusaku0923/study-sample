@@ -136,7 +136,7 @@ class TestRecordsSeeder extends Seeder
             foreach ($array['schedule'] as $schedule) {
                 // 学習予定
                 StudySchedule::query()->create([
-                    'record_id' => $record->id,
+                    'study_record_id' => $record->id,
                     'schedule' => $schedule['date'],
                     'completed_at' => isset($schedule['completed_at']) ? $schedule['completed_at'] : NULL,
                     'scheduled_seconds' => $schedule['scheduled_seconds'],
