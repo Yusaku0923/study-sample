@@ -3,12 +3,11 @@
 @section('title', 'Dashboard')
 
 @section('content_header')
-    {{-- <div>
-
-    </div> --}}
     <h1>Home</h1>
     <div class="col-12 text-center mt-3">
-        <button class="col-lg-3 col-md-5 col-8 py-1 btn btn-primary" style="font-size: 22px;font-weight: bold;">新規作成</button>
+        <a href="{{ route('study_record.create') }}">
+            <button class="col-lg-3 col-md-5 col-8 py-1 btn btn-primary" style="font-size: 22px;font-weight: bold;">新規作成</button>
+        </a>
     </div>
 @stop
 
