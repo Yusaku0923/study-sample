@@ -22,4 +22,5 @@ Route::middleware(['auth'])->group(function() {
     Route::get('/', [HomeController::class, 'index'])->name('home');
     Route::get('create', [StudyRecordController::class, 'create'])->name('study_record.create');
     Route::post('store', [StudyRecordController::class, 'store'])->name('study_record.store');
+    Route::get('review/{id}', [StudyRecordController::class, 'review'])->name('study_record.review');
 });

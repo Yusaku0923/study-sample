@@ -23,13 +23,29 @@ class StudyRecordController extends Controller
         $study_record->detail = $request->detail;
         $study_record->save();
 
+        $id = 0;
         foreach($request->term as $date) {
             $study_schedule = new StudySchedule();
             $study_schedule->study_record_id = $study_record->id;
             $study_schedule->schedule = date('Y-m-d', strtotime('+'.$date.' day'));
             $study_schedule->save();
+            if ($id === 0) {
+                $id = $study_schedule->id;
+            }
         }
 
-        return redirect()->route('home');
+        return redirect()->route('study_record.review', $id);
+    }
+
+    public function review($id){
+        $record_id = StudySchedule::where('id', $id)->value('study_record_id');
+        $oldest = StudySchedule::where('study_record_id', $record_id)->oldest('schedule')->first();
+        $study_schedule = StudySchedule::whereNull('completed_at')->with('record')->find($id);
+
+        if ($oldest->id != $id || empty($study_schedule) || $study_schedule['record']['user_id'] != Auth::id()) return redirect()->route('home');
+
+        return view('study_records.review')->with([
+            'study_schedule' => $study_schedule
+        ]);
     }
 }

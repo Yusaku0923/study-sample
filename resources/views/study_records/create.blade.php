@@ -39,7 +39,7 @@
                             <label for="detail">詳細</label>
                         </div>
                         <div class="col-12">
-                            <textarea name="detail" cols="40" rows="5"></textarea>
+                            <textarea class="py-2 px-2" name="detail" cols="40" rows="5"></textarea>
                         </div>
                     </div>
                     <div class="col-12 mt-3">
