@@ -19,7 +19,7 @@
                             <label for="name">課題名</label>
                         </div>
                         <div class="col-12">
-                            <input class="py-2 px-2" name="name" type="text" style="width: 100%;">
+                            <input class="py-2 px-2" name="name" type="text" style="width: 100%;" placeholder="例）英単語帳①">
                         </div>
                     </div>
                     <div class="col-12 mt-3">
@@ -39,7 +39,7 @@
                             <label for="detail">詳細</label>
                         </div>
                         <div class="col-12">
-                            <textarea class="py-2 px-2" name="detail" cols="40" rows="5"></textarea>
+                            <textarea class="py-2 px-2" name="detail" cols="40" rows="5" placeholder="例）英単語帳10～30ページ"></textarea>
                         </div>
                     </div>
                     <div class="col-12 mt-3">
