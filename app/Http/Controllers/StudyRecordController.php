@@ -49,3 +49,4 @@ class StudyRecordController extends Controller
         ]);
     }
 }
+//https://examist.jp/category/mathematics/

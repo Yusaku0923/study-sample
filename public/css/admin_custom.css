@@ -54,3 +54,19 @@
     font-size: 16px;
     font-weight: bold;
 }
+
+/* .colorfilter {
+    background-color: #2844b8;
+    background-color: #a4e4fc;
+    background-color: #bc5458;
+    background-color: rgb(4, 0, 255);
+    display: inline-block;
+} */
+
+.colorfilter-image {
+    /* mix-blend-mode:darken; */
+    /* opacity: 0.2; */
+    display: block;
+    width: 100%;
+    /* height: 10%; */
+}
